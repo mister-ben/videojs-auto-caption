@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <title>videojs-auto-caption Demo</title>
+  <link href="node_modules/video.js/dist/video-js.css" rel="stylesheet">
+  
+</head>
+<body>
+  <video id="videojs-auto-caption-player" class="video-js vjs-default-skin" controls>
+    <source src="//vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+    <source src="//vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+    <track kind="subtitles" kind="subtitles" srclang="ar" src="https://bcsecure01-a.akamaihd.net/3/906043040001/201808/862/906043040001_486e0640-688f-4110-ae27-2ab83559a24e.vtt?pubId=906043040001&videoId=1352995359001"> 
+    <track kind="subtitles" kind="subtitles" srclang="en" src="https://bcsecure01-a.akamaihd.net/3/906043040001/201808/862/906043040001_16c642ac-70bd-43f1-b3af-be42547bd834.vtt?pubId=906043040001&videoId=1352995359001"> 
+  
+  </video>
+  <ul>
+    <li><a href="/test/debug.html">Run unit tests in browser.</a></li>
+    <li><a href="docs/api/">Read generated docs.</a></li>
+  </ul>
+  <script src="node_modules/video.js/dist/video.js"></script>
+  <script src="dist/videojs-auto-caption.js"></script>
+  <script>
+    (function(window, videojs) {
+      var examplePlayer = window.examplePlayer = videojs('videojs-auto-caption-player');
+      var autoCaption = window.autoCaption = examplePlayer.autoCaption();
+    }(window, window.videojs));
+  </script>
+</body>
+</html>
