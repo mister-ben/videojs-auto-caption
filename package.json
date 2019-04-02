@@ -1,6 +1,6 @@
 {
   "name": "videojs-auto-caption",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Automatically enables the caption/subtitle track matching the player language",
   "main": "dist/videojs-auto-caption.cjs.js",
   "module": "dist/videojs-auto-caption.es.js",
@@ -95,6 +95,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mister-ben/videojs-auto-caption.git"
-
   }
 }
