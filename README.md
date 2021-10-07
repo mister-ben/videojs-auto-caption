@@ -1,6 +1,6 @@
 # videojs-auto-caption
 
-Automatically enables the caption or subtitle track best matching the player language.
+Automatically enables the caption or subtitle track best matching the player language. The plugin name is a bit stupid, as it's nothing to do with automatically _generating_ captions.
 
 Language codes are considered case-insensitively. If one or more track with a `kind` of `captions` or `subtitles` with an exactly matching language code, the first will be selected.
 
